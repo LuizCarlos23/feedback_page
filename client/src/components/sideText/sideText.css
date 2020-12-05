@@ -1,0 +1,47 @@
+.side-text h2, .side-text h3{
+  width: 100%;
+  font-size: 55px;
+  text-align: left;
+} 
+
+.side-text h3{
+  padding-top: 10%;
+}
+
+.side-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.borda_texto{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(199, 1, 199);
+  color: white;
+}
+
+
+@media(max-width: 1080px){
+  .side-text{
+    flex-direction: row;
+  }
+  .side-text h2{
+    display: none;
+  }
+
+  .side-text h3{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-size: 45px;
+    text-align: center;
+  }
+}
+@media(max-width: 640px){
+  .side-text h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 40px;
+  }
+  
+}

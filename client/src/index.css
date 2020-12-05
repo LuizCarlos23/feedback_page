@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+.App{
+  margin: 7% 5% 20px 5%; 
+  padding: 2% 2% 0 2%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 30px;
+}
+
+body{
+  background-image: url("./assets/background04.jpeg");
+  background-size: cover;
+  width: 100%;
+  font-family: "open sans";
+}
+
+h1, h2, h3{
+  text-align: center;
+  font-weight: bold;
+  font-family: "Spartan";
+  font-size: 58px;
+  color: black;
+}
+
+h2{
+  line-height: 48px;
+}
+
+.btn, .btn:active {
+  width: 150px;
+  height: 50px;
+  font-size: 22px;
+  background-color: rgb(129, 27, 171);
+}
+
+@media(max-width: 1080px){
+  body{
+    background-image: url("./assets/background04-mobile.jpeg");
+  }
+  .App{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 640px){
+  body{
+    background-position: 100% 100%;
+  }
+}

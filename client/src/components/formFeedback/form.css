@@ -1,0 +1,71 @@
+form{
+  padding: 10%;
+  font-size: 24px;
+}
+
+.form-control, .form-control:focus{
+  outline: none;
+  border: 0 none;
+  color: white;
+  background-color: rgb(129, 27, 171);
+}
+
+.form-control::-webkit-input-placeholder{
+  color: rgba(255, 255, 255, 0.794);
+  font-weight: bold;
+}
+
+
+.feedback-form {
+  width: 100%;
+}
+
+.invalidMessage {
+  visibility: hidden;
+  font-size: 20px;
+  color: rgba(243, 121, 121, 0.924);
+}
+
+input:invalid, textArea:invalid{
+  border-color: red;
+  box-shadow: 0 0 8px rgb(255, 0, 0);
+}
+
+
+@media(max-width: 1024px){
+  .feedback-form {
+    padding: 0 10% 0 10%;
+  }
+  form{
+    padding-top: 12px;
+  }
+  .form-control::-webkit-input-placeholder, .invalidMessage{
+    font-size: 23px;
+  }
+  .feedback-form h1{
+    display: none;
+  }
+}
+
+@media(max-width: 1080px){
+  .feedback-form {
+    padding: 0 10% 0 10%;
+  }
+  form{
+    padding-top: 12px;
+  }
+  .form-control::-webkit-input-placeholder, .invalidMessage{
+    font-size: 23px;
+  }
+  .feedback-form h1{
+    display: none;
+  }
+}
+@media(max-width: 640px){
+  .feedback-form {
+    padding: 0 0 0 0;
+  }
+  .form-control::-webkit-input-placeholder, .invalidMessage{
+    font-size: 18px;
+  }
+}
