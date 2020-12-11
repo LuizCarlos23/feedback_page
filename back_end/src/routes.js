@@ -6,7 +6,7 @@ const routeList = require("./controller/routeList")
 const routeInsert = require("./controller/routeInsert")
 
 // Configuração para o body-parser
-routes.use(express.urlencoded({ extended: true }))
+routes.use(bodyParser.urlencoded({ extended: true }))
 routes.use(bodyParser.json())
 
 routes.get("/", (req, res) => {
